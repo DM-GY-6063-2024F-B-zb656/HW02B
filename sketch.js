@@ -8,8 +8,32 @@ function setup() {
   //landscape
   fill(20,149,255); //sky
   rect(rectX, rectY, 240, 750);
+
   fill(60,128,0); //hill
   arc(windowWidth/2 + 40, 750, 400, 400, PI, 0);
+
+  fill(255,255,255); //clouds
+  strokeWeight(0);
+  rect(rectX + 48, rectY + 427, 80, 20, 10, 10, 5, 5);
+  ellipse(rectX + 68, rectY + 427, 30, 30);
+  ellipse(rectX + 88, rectY + 417, 30, 30);
+  ellipse(rectX + 100, rectY + 427, 30, 30);
+
+  rect(rectX + 108, rectY + 307, 80, 20, 10, 10, 5, 5);
+  ellipse(rectX + 130, rectY + 307, 30, 30);
+  ellipse(rectX + 150, rectY + 307, 30, 30);
+  ellipse(rectX + 165, rectY + 295, 30, 30);
+  ellipse(rectX + 170, rectY + 307, 30, 30);
+  strokeWeight(1);
+
+  fill(235,7,240); //flowers
+  quad(rectX + 10, rectY + 695, rectX + 15, rectY + 700, rectX + 10, rectY + 705, rectX + 5, rectY + 700);
+  quad(rectX + 30, rectY + 595, rectX + 35, rectY + 600, rectX + 30, rectY + 605, rectX + 25, rectY + 600);
+  quad(rectX + 50, rectY + 650, rectX + 55, rectY + 655, rectX + 50, rectY + 660, rectX + 45, rectY + 655);
+  quad(rectX + 70, rectY + 625, rectX + 75, rectY + 630, rectX + 70, rectY + 635, rectX + 65, rectY + 630);
+  quad(rectX + 120, rectY + 575, rectX + 125, rectY + 580, rectX + 120, rectY + 585, rectX + 115, rectY + 580);
+  quad(rectX + 155, rectY + 670, rectX + 160, rectY + 675, rectX + 155, rectY + 680, rectX + 150, rectY + 675);
+  quad(rectX + 200, rectY + 590, rectX + 205, rectY + 595, rectX + 200, rectY + 600, rectX + 195, rectY + 595);
 
   //walls
   fill(40,25,0);
