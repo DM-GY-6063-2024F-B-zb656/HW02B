@@ -45,9 +45,6 @@ function setup() {
   rect(rectX - 25, rectY, 25, 750);
   rect(rectX + 240, rectY, 25, 750);
 
-  //paintings
-  img = loadImage('assets/saintbride.jpg');
-
   //window
   fill(255,255,255,160)
   //top line
@@ -311,5 +308,4 @@ function setup() {
 }
 
 function draw() {
-  image(img, 200,200);
 }
